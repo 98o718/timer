@@ -159,10 +159,10 @@ func renderDuration(dur time.Duration) string {
 	m := int(dur.Minutes()) % 60
 	h := int(dur.Hours()) % 24
 	if h > 0 {
-		return fmt.Sprintf("%dh%dm%ds", h, m, s)
+		return fmt.Sprintf("%dh%dm", h, m)
 	}
 	if m > 0 {
-		return fmt.Sprintf("%dm%ds", m, s)
+		return fmt.Sprintf("%dm", m)
 	}
 	return fmt.Sprintf("%ds", s)
 }
