@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/martinlindhe/timer"
+	"github.com/98o718/timer"
 )
 
 func main() {
