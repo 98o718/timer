@@ -43,7 +43,6 @@ func (app *app) Run() {
 		setTrayIcon()
 		app.menuStopwatch = systray.AddMenuItem("Start stopwatch", "")
 		app.menuTimer = systray.AddMenuItem("Start timer", "")
-		app.menuTimer = systray.AddMenuItem("TEST", "")
 		//systray.AddMenuSeparatorItem()
 		mQuit := systray.AddMenuItem("Quit "+app.name, "")
 
