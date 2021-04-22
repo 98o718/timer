@@ -78,7 +78,7 @@ func (app *app) Run() {
 				}
 			case <-app.menuTimer.ClickedCh:
 				if !app.timerRunning {
-					got, ok := inputbox.InputBox("Enter duration", "Enter duration (format: 3h, 5m30s)", "5m")
+					got, ok := inputbox.InputBox("Enter duration", "Enter duration (format: 3h5m30s)", "8h30m")
 					if ok {
 						var err error
 						app.timerDuration, err = time.ParseDuration(got)
